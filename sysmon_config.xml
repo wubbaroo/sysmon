@@ -5,7 +5,9 @@
 	<!--EVENT ID 1-->
 		<ProcessCreate onmatch="exclude">
 			<!--Organiztional Programs-->
-			<CommandLine condition="is">C:\Program Files\Commvault\ContentStore\Base\cvd.exe -vm </CommandLine> 	<CommandLine condition="is">C:\Program Files\Commvault\ContentStore\Base\ClMgrS.exe -vm</CommandLine> <CommandLine condition="contains">%SystemRoot%\TEMP\nessus_tmp_audit_cmd_</CommandLine> 
+			<CommandLine condition="is">C:\Program Files\Commvault\ContentStore\Base\cvd.exe -vm </CommandLine> 	
+			<CommandLine condition="is">C:\Program Files\Commvault\ContentStore\Base\ClMgrS.exe -vm</CommandLine> 
+			<CommandLine condition="contains">%SystemRoot%\TEMP\nessus_tmp_audit_cmd_</CommandLine> 
 			<!--VM Tools Programs-->
 			<Image condition="is">C:\Program Files\VMware\VMware Tools\VMware VGAuth\VGAuthService.exe</Image>
 			<Image condition="is">C:\Program Files\VMware\VMware Tools\vmtoolsd.exe</Image>
